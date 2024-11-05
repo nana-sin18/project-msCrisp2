@@ -11,6 +11,6 @@ $lokasifoto = $_FILES["foto_produk"]["tmp_name"];
 $query = mysqli_query($koneksi, "insert into produk values(null, '$nama', '$namafoto', '$deskripsi', '$harga', 2)");
 
 if ($query){
-    move_uploaded_file($lokasifoto, "foto/$namafoto");
+    move_uploaded_file($lokasifoto, "img/$namafoto");
     header("Location: halaman_admin.php");
 }

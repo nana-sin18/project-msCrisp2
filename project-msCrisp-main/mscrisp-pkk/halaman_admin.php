@@ -1,11 +1,11 @@
 <?php
 session_start();
 
-if($_SESSION['role'] != "admin"){
-    echo "404 anda tidak berhak untuk masuk kehalaman ini";
-    die();
-}
-?>
+// if($_SESSION['role'] != "admin"){
+//     echo "404 anda tidak berhak untuk masuk kehalaman ini";
+//     die();
+// }
+// ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -103,29 +103,21 @@ if($_SESSION['role'] != "admin"){
             <tbody>
                 <?php
                 include 'koneksi.php';
-                $data = mysqli_query($koneksi, "select * from produk")
-                ?>
+                $data = mysqli_query($koneksi, "select * from produk");
+                while ($d = mysqli_fetch_array($data)){
+                    ?>
                 <tr>
-                    <td>Fried Chicken Spicy</td>
-                    <td><img src="img/spicyy.jpeg" alt="Fried Chicken Spicy" class="product-img"></td>
-                    <td>Ayam goreng dengan rasa pedas yang menggugah selera</td>
-                    <td>Rp 25.000</td>
-                </tr>
-                <tr>
-                    <td>Fried Chicken Original</td>
-                    <td><img src="img/original.jpeg" alt="Fried Chicken Original" class="product-img"></td>
-                    <td>Ayam goreng crispy dengan cita rasa original</td>
-                    <td>Rp 20.000</td>
-                </tr>
-                <tr>
-                    <td>Fried Chicken BBQ</td>
-                    <td><img src="img/bbqq.jpeg" alt="Fried Chicken BBQ" class="product-img"></td>
-                    <td>Ayam goreng BBQ dengan rasa khas asap</td>
-                    <td>Rp 30.000</td>
+                    <td><?php echo $d['nama']; ?></td>
+                    <td><?php echo $d['foto']; ?></td>
+                    <td><?php echo $d['deskripsi']; ?></td>
+                    <td><?php echo $d['harga']; ?></td>
+                    
                 </tr>
                 
             </tbody>
-            
+            <?php
+        }
+        ?>
         </table>
         <br><br><br>
         <a href="tambah_produk.php" class="add-button">+ Tambah Variant</a>

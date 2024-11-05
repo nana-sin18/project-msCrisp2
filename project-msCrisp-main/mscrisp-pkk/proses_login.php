@@ -6,6 +6,7 @@ session_start();
 $email = $_POST["email"];
 $password = $_POST["password"];
 
+
 // Mengecek apakah email ada di database
 $sql = mysqli_query($koneksi, "SELECT * FROM user WHERE email = '$email' AND password = '$password'");
 $data = mysqli_fetch_assoc($sql);
