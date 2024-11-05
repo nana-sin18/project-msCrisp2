@@ -15,7 +15,7 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            overflow: hidden;
+            /* overflow: hidden; */
         }
 
         .keranjang {
@@ -232,7 +232,7 @@
     function removeFile() {
         document.getElementById('file-upload').value = '';
         document.getElementById('remove-btn').style.display = 'none';
-        closeRemoveAlert(); // Close the remove alert after removing
+        closeRemoveAlert(); 
     }
 
     function showConfirmation() {
