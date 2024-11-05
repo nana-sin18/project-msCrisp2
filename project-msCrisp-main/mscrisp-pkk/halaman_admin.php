@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-// if($_SESSION['role'] != "admin"){
-//     echo "404 anda tidak berhak untuk masuk kehalaman ini";
-//     die();
-// }
+if($_SESSION['role'] != "admin"){
+    echo "404 anda tidak berhak untuk masuk kehalaman ini";
+    die();
+}
 // ?>
 
 <!DOCTYPE html>
