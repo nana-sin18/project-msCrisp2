@@ -515,9 +515,17 @@
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     .feedback-container {
-        margin-left: 0; /* Hapus margin di layar kecil */
-        margin-top: 20px; /* Spasi atas */
+        margin-left: 0; 
+        margin-top: 20px; 
     }
+}
+.logout {
+    color: #000000;
+    text-decoration: none;
+}
+.logout a:hover{
+    color: #4a5568;
+    text-decoration: line-through;
 }
 
     </style>
@@ -527,7 +535,7 @@
         <nav class="navbar navbar-expand-lg">
             <img src="img/logo.png" alt="MS Crisp Logo" class="logo">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> <!-- Ini adalah ikon yang harusnya terlihat -->
+                <span class="navbar-toggler-icon"></span> 
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
@@ -536,6 +544,7 @@
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimoni">Testimonial</a></li>
+                    <li><a class="logout" href="logout.php">Logout</a></li>
                 </ul>
             </div>
         </nav>
