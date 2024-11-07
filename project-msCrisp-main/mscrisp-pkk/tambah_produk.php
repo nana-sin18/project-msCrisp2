@@ -20,6 +20,9 @@
         <label>Foto Variant Produk:</label>
         <input type="file" name="foto_produk" required><br><br>
 
+        <label>Jenis:</label>
+        <input type="text" name="jenis" required><br><br>
+
         <button type="submit">Simpan Produk</button>
     </form>
 </body>

@@ -540,7 +540,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="variants.html">Variants</a></li>
+                    <li class="nav-item"><a class="nav-link" href="variants.php">Variants</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#testimoni">Testimonial</a></li>
@@ -555,7 +555,7 @@
         <div class="intro-text">
             <h1>Selamat datang di <span style="color: #ff9d02;">MS Crisp</span></h1>
             <p>Nikmati fried chicken kami yang renyah dan lezat dengan tiga rasa yang luar biasa: Original, Spicy, dan BBQ.</p>
-            <a href="variants.html" class="cta-button">All Variants</a>
+            <a href="variants.php" class="cta-button">All Variants</a>
         </div>
         <div class="fried-chicken-image">
             <img src="img/ayam.png" alt="Fried Chicken Image">
