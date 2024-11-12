@@ -539,7 +539,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="home.php">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="variants.php">Variants</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -575,6 +575,9 @@
     </section>
 
     <section class="populer">
+    <?php
+                while($data = mysqli_fetch_array($query));
+                ?>
         <h1>Most <span style="color: #ff9d02;">Popular</span></h1>
         <div class="card-container">
             <div class="card">
@@ -582,7 +585,8 @@
                 <h2>Original</h2>
                 <p style="color: #8E8E8E;">Nikmati kelezatan klasik dari MS Crisp Original! Setiap gigitan ayam yang crispy di luar dan juicy di dalam, diproses dengan bumbu spesial yang kaya rasa, sempurna untuk pecinta fried chicken sejati.</p>
                 <h3>IDR 15,000</h3>
-                <a href="keranjang.php" style="text-decoration: none;">
+                
+                <a href="keranjang.php?id_produk=<?= $data['id_produk'] ?>" style="text-decoration: none;">
                 
 <button class="cta">
   <span class="hover-underline-animation"> Shop now </span>
@@ -602,9 +606,8 @@
   </svg>
 </button>
 
-                </a>
+                </a>       
             </div>
-            
             <div class="card">
                 <img src="img/spicyy.jpeg" alt="Original Flavor">
                 <h2>Spicy</h2>
