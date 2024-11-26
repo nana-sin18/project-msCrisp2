@@ -128,7 +128,7 @@
         <h2><?= $data['nama'] ?></h2>
         <p style="color: #8E8E8E;"><?= $data['deskripsi'] ?></p>
         <h3><?= $data['harga'] ?></h3>
-        <a href="keranjang.php" style="text-decoration: none;">
+        <a href="keranjang.php?id_produk=<?= $data['id_produk'] ?>" style="text-decoration: none;">
             <button class="cta">
                 <span class="hover-underline-animation">Shop now</span>
                 <svg

@@ -7,7 +7,6 @@ if($_SESSION['role'] != "admin"){
 
 include 'koneksi.php';
 
-// Ambil ID produk dari URL
 $id_produk = $_GET['id'];
 $query = mysqli_query($koneksi, "SELECT * FROM produk WHERE id_produk = '$id_produk'");
 $d = mysqli_fetch_array($query);

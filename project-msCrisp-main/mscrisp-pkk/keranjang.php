@@ -1,8 +1,7 @@
 <?php
 session_start();
 include ('koneksi.php');
-// $id = $_GET['id_produk'];
-// $query = mysqli_query()
+
 ?>
 
 <!DOCTYPE html>

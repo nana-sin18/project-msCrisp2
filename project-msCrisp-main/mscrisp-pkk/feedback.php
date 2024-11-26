@@ -13,10 +13,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($stmt->execute()) {
         echo "Feedback berhasil dikirim.";
     } else {
-        echo "Terjadi kesalahan: " . $stmt->error; // Pastikan ini mencetak pesan kesalahan
+        echo "Terjadi kesalahan: " . $stmt->error; 
     }
 
-    // Menutup statement dan koneksi
+    
     $stmt->close();
     $koneksi->close();
 }
